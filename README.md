@@ -1,71 +1,69 @@
-# Update 07/09/2018
+## You like and use this theme? Then support me. Just [paypal.me/PhlowMedia](https://www.paypal.me/PhlowMedia) :)
 
-I'm planning to refactor Leonids theme!!!
+[![Flattr this git repo](http://api.flattr.com/button/flattr-badge-large.png)](https://flattr.com/submit/auto?user_id=Phlow&url=https://github.com/Phlow/feeling-responsive&title=Support%20Feeling%20Responsive%20Jekyll%20Theme&language=en_GB&tags=github,jekyll,theme,webdesign&category=software)
 
-The goal is really simple: make documentation more intuitive and deployment simpler!!!
 
-Here is the plan:
+# Newsletter: Stay in Touch for Future Updates
 
-| Version | Description | Date |
-| --- | --- | --- |
-| 1.1 | Jekyll version deployable with gem | 07/15/2018 |
-| 1.2 | New features: Pagination, Prev/Next post | 07/22/2018 |
-| 2.0 | Gatsby or Vuepress version (vote in Issues) | who knows... |
+If you are a webdesigner interested in Jekyll, the static website generator, this little newsletter is for you. I share tutorials, clever code snippets and information about my own Jekyll Themes called [*Feeling Responsive*][7] and [*Simplicity*][8]. Please don't expect weekly emails :)
 
-As the project was and will be designed to improve your writing experience, only documentation, gem, deployment process with CI relevant PRs are acceptable in the future.
+[![Subscribe to Jekyll Newsletter](https://phlow.github.io/static/tinyletter_subscribe_button.png)](https://tinyletter.com/feeling-responsive)
 
-I want you to know how much I value your support.
 
-Share it to your timeline!
+[![Start Video](https://github.com/Phlow/feeling-responsive/blob/gh-pages/images/video-feeling-responsive-1280x720.jpg)](https://www.youtube.com/embed/3b5zCFSmVvU)
 
-# Update 05/06/2016
+## A Responsive Jekyll Theme: *Feeling Responsive*
 
-Important! It's better to download the gzipped files instead of forking the repo. I would really appreciate if you could give me a star. 😁
+Do you want to get to know *Feeling Responsive*? Than check it out first and have a look on its home at  <http://phlow.github.io/feeling-responsive/>.
 
-This project is under MIT license, so feel free to make it your own.
+To get to know *Feeling Responsive* check out all the features explained in the [documentation][1].
 
-# Leonids Jekyll Themes
+And what license is *Feeling Responsive* released under? [This one][2].
 
-**[Leonids](http://renyuanz.github.io/leonids)** is a clean Jekyll theme perfect for powering your GitHub hosted blog.
 
-## What is Leonids?
 
-* Responsive templates. Looking good on mobile, tablet, and desktop.
-* Simple and clear permalink structure.
-* Support for Disqus Comments.
-* Support for multi-authors.
-* **And** the Leonids (/ˈliːənɪdz/ lee-ə-nidz) are a prolific meteor shower associated with the comet [Tempel-Tuttle](https://en.wikipedia.org/wiki/55P/Tempel%E2%80%93Tuttle).
+## Why use this theme?
 
-See a [demo](http://renyuanz.github.io/leonids/) hosted on GitHub.
+Feeling Responsive is heavily customizable.
 
-## Quick setup
+1. Language-Support :)
+2. Optimized for speed and it's responsive.
+3. Built on Foundation Framework.
+4. Six different Headers.
+5. Customizable navigation, footer,...
 
-```
-git clone https://github.com/renyuanz/leonids
-cd leonids
-jekyll server
-```
+**[More ›][3]**
 
-Check out your awesome blog at `http://localhost:4000` and Cheers!
 
-## Running with Docker
 
-```
-docker run --rm -it --volume=$PWD:/srv/jekyll -p 4000:4000 jekyll/jekyll:pages jekyll serve --watch --force_polling
-```
+## Changelog
 
-## Resume Page by [@Skn0tt](https://github.com/Skn0tt)
-Leonids features a simple resume page. It is divided up into five sections:
+*Feeling Responsive* is in active development. Thank you to everyone who contributed, especially [Róbert Papp][5], [Alexandra von Criegern](https://github.com/plutonik-a) and [Juan Jose Amor Iglesias](https://github.com/jjamor).
 
-* Bio (Edit \_data/index/careers.yml)
-* Education (Edit \_data/index/education.yml)
-* Skills (Edit \_data/index/skills.yml)
-* Projects (Edit \_data/index/projects.yml)
-* About (Edit \_includes/sections/about.html)
+**[Read Changelog ›][6]**
 
-You can put all your info into these files, and they will be featured on the resume page.
 
-## TODO
 
-- [ ] Redesign categories page. Ref: [dribbble: blog category section By Ilja Miskov](https://dribbble.com/shots/2274792-Blog-Category-Selection)
-- [ ] Multi languages support.
+## Video Tutorial
+
+Click the image to [watch the YouTube-Video-Tutorial][4].
+
+[![Start Video](https://github.com/Phlow/feeling-responsive/blob/gh-pages/images/video-feeling-responsive-tutorial-frontpage.jpg)](https://www.youtube.com/watch?v=rLS-BEvlEyY)
+
+
+
+
+
+
+
+
+ [1]: http://phlow.github.io/feeling-responsive/documentation/
+ [2]: https://github.com/Phlow/feeling-responsive/blob/gh-pages/LICENSE
+ [3]: http://phlow.github.io/feeling-responsive/info/
+ [4]: https://www.youtube.com/watch?v=rLS-BEvlEyY
+ [5]: https://github.com/TWiStErRob
+ [6]: https://phlow.github.io/feeling-responsive/changelog/
+ [7]: http://phlow.github.io/feeling-responsive/
+ [8]: http://phlow.github.io/simplicity/
+ [9]: #
+ [10]: #
