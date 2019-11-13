@@ -1,51 +1,67 @@
 ---
 layout: default
 ---
-<div id="main">
-  <article>
-    <header>
-      <h1 class="post-title">{{ page.title }}</h1>
-      <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+<div class="post">
+    {% if page.reading_time %}
+    <p class="post-reading-time">&#126;
+        {% capture words %}
+          {{ content | number_of_words | minus: 180 }}
+        {% endcapture %}
+        {% unless words contains "-" %}
+          {{ words | plus: 180 | divided_by: 180 | append: " min" }}
+        {% endunless %}
+    </p>
+    {% endif %}
+
+    <header class="post-header">
+        {% if page.thumb %}
+        <img src="{{ page.thumb }}" alt="{{ page.title }}" class="post-thumb" />
+        {% endif %}
+
+        <h1 class="post-title">{{ page.title }}</h1>
     </header>
 
-    <section>
-      {{ content }}
-    </section>
+    <article class="post-content">
+        {{ content }}
+    </article>
 
-    <footer>
-      <div class="row">
-      {% if page.previous %}
-        <article class="{% cycle '6u', '6u$' %} 12u(small) excerpt">
-          <header>
-            <h2><a href="{{ page.previous.url }}">{{ page.previous.title }}</a></h2>
-          </header>
-          <section>
-            {{ page.previous.excerpt }}
-          </section>
-          <footer>
-            <ul class="actions">
-              <li><a href="{{ page.previous.url }}" class="button">Read More</a></li>
-            </ul>
-          </footer>
-        </article>
-      {% endif %}
-
-      {% if page.next %}
-        <article class="{% cycle '6u', '6u$' %} 12u(small) excerpt f-right">
-          <header>
-            <h2><a href="{{ page.next.url }}">{{ page.next.title }}</a></h2>
-          </header>
-          <section>
-            {{ page.next.excerpt | markdownify }}
-          </section>
-          <footer>
-            <ul class="actions">
-              <li><a href="{{ page.next.url }}" class="button">Read More</a></li>
-            </ul>
-          </footer>
-        </article>
-      {% endif %}
-      </div>
+    <footer class="post-meta">
+        {% if page.date %}
+        <div class="meta">
+            <h3 class="meta-title">Date</h3>
+            <span class="meta-content">{{ page.date | date: "%B %-d, %Y" }}</span>
+        </div>
+        {% endif %}
+        {% if page.author %}
+        <div class="meta">
+            <h3 class="meta-title">Author</h3>
+            <span class="meta-content">{{ page.author }}</span>
+        </div>
+        {% endif %}
+        {% if page.show_categories %}
+        <div class="meta">
+            <h3 class="meta-title">Categories</h3>
+            <span class="meta-content">
+                {% for category in page.categories %}
+                    {{ category | capitalize }}&nbsp;
+                {% endfor %}
+            </span>
+        </div>
+        {% endif %}
+        {% if page.show_tags %}
+        <div class="meta">
+            <h3 class="meta-title">Tags</h3>
+            <span class="meta-content">
+                {% for tag in page.tags %}
+                    {{ tag | capitalize }}&nbsp;
+                {% endfor %}
+            </span>
+        </div>
+        {% endif %}
     </footer>
-  </article>
+
+    {% include share.html %}
+
+    {% include disqus.html %}
+
 </div>
